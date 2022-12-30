@@ -282,6 +282,7 @@ footer #for-mbl-icons a i {
   }
   .lower-footer {
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding-bottom: 11rem;
   }
