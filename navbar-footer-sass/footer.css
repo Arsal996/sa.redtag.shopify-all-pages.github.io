@@ -281,10 +281,10 @@ footer #for-mbl-icons a i {
     padding: 0 1rem;
   }
   .lower-footer {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 11rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 11rem;
+        text-align: center;
   }
   .main-footer .five select {
     margin-left: 2rem;
