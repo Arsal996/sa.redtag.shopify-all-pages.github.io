@@ -365,10 +365,10 @@ footer {
     }
 
     .lower-footer {
-        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        padding-bottom: 11rem;
+        padding-bottom: 10rem;
+        text-align: center;
 
         // #CR-No {
         //     display: none;
