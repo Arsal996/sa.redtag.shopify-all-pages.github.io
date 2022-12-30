@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&family=Tajawal:wght@300;400;500&family=Ubuntu:wght@300&display=swap");
+* {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 75%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+}
+footer .top-footer {
+  background-color: pink;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 10%;
+}
+footer .top-footer .text-part {
+  width: 50%;
+}
+footer .top-footer .text-part h2 {
+  display: none;
+}
+footer .top-footer .text-part h3 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+footer .top-footer .text-part p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+footer .top-footer .form-part {
+  width: 50%;
+}
+footer .top-footer .form-part .email-form {
+  display: flex;
+  margin-top: 0.7rem;
+}
+footer .top-footer .form-part .email-form input {
+  width: 80%;
+  height: 45px;
+  border-radius: 50px;
+  background: #fff;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+  padding: 0 20px;
+  text-transform: none;
+}
+footer .top-footer .form-part .email-form .sub-btn {
+  width: 180px;
+  height: 45px;
+  text-transform: uppercase;
+  margin-left: -100px;
+  border-radius: 50px;
+  background: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer .top-footer .form-part .email-form .sub-btn:hover {
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  font-weight: 600;
+}
+footer #for-mbl-icons {
+  display: none;
+}
+footer #for-mbl-icons a {
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
+}
+footer #for-mbl-icons a i {
+  padding: 0 0.7rem;
+  margin-top: 1rem;
+}
+
+.main-footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  border-bottom: 1px solid grey;
+}
+.main-footer .footer-data ul {
+  list-style: none;
+}
+.main-footer .footer-data ul .footer-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.4rem;
+  border-bottom: 1px solid rgb(109, 109, 109);
+}
+.main-footer .footer-data ul li {
+  padding: 1rem 0;
+}
+.main-footer .footer-data ul li a {
+  color: rgb(179, 179, 179);
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+.main-footer .five a {
+  color: #fff;
+  margin: 1.5rem 0;
+  float: right;
+}
+.main-footer .five select {
+  width: 110%;
+  height: 50px;
+  background: none;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.main-footer .five select option {
+  height: 50px;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 1rem 2rem 0 0;
+  font-size: 1.2rem;
+}
+.main-footer .five .call-btn {
+  width: 170px;
+  height: 45px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background: rgb(0, 0, 0);
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 10px;
+  margin: 200px 0 0 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main-footer .five .call-btn:hover {
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.lower-footer {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5%;
+}
+.lower-footer .logo-sec h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.lower-footer .logo-sec h2 span {
+  color: #ff0000;
+}
+.lower-footer .logo-sec p {
+  color: rgb(179, 179, 179);
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+.lower-footer .rights-sec {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: rgb(179, 179, 179);
+}
+.lower-footer .icons-sec a {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.lower-footer .icons-sec a i {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  footer .top-footer {
+    padding: 3rem 4%;
+  }
+  footer .main-footer {
+    flex-wrap: wrap;
+  }
+  footer .lower-footer {
+    flex-wrap: wrap;
+  }
+  #men-nav-b {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer .top-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  footer .top-footer .text-part {
+    width: 100%;
+  }
+  footer .top-footer .form-part {
+    width: 90%;
+    margin-left: 4rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .lower-footer .icons-sec {
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 570px) {
+  footer .top-footer .text-part h3 {
+    display: none;
+  }
+  #hide-mbl-f {
+    display: none;
+  }
+  footer .top-footer .text-part h2 {
+    display: block;
+    font-size: 2.5rem;
+    font-family: "La Belle Aurore", cursive;
+  }
+  footer .top-footer .form-part .email-form {
+    flex-direction: column;
+  }
+  footer .top-footer .form-part .email-form input {
+    width: 100%;
+    margin-left: -2rem;
+  }
+  footer .top-footer .form-part .email-form .sub-btn {
+    margin-left: -0.5rem;
+    margin-top: 1.4rem;
+    width: 85%;
+  }
+  .lower-footer .icons-sec {
+    display: none;
+  }
+  #for-pc {
+    display: none;
+  }
+  .top-footer #for-mbl-icons {
+    display: block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  footer .main-footer {
+    padding: 1rem 3rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .top-footer #for-mbl-icons a i {
+    padding: 0 1rem;
+  }
+  .lower-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 11rem;
+  }
+  .main-footer .five select {
+    margin-left: 2rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-left: 6rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main-footer .five select {
+    margin-left: 1rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-left: 5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  footer .main-footer {
+    padding: 1 2.2rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-left: 4rem;
+  }
+  .main-footer .five select {
+    margin-left: 0.6rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&family=Tajawal:wght@300;400;500&family=Ubuntu:wght@300&display=swap");
+* {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  /* transition: 1s linear; */
+}
+
+html {
+  font-size: 75%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin: 4rem 0 2rem 2.5rem;
+  text-align: left;
+}
+
+.main-img {
+  width: 100%;
+  margin-top: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.main-img img {
+  width: 96%;
+  height: 42rem;
+}
+
+.small-img {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.small-img img {
+  width: 100%;
+  height: 8rem;
+}
+
+#for-mbl {
+  display: none;
+}
+
+.first-slider {
+  margin-top: 6rem;
+}
+.first-slider .swiper {
+  width: 96%;
+  height: 100%;
+}
+.first-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.first-slider .swiper-button-next {
+  color: rgb(0, 0, 0);
+}
+.first-slider .swiper-button-prev {
+  color: #ff0000;
+}
+
+.swiper-pagination-bullet-active {
+  background: black;
+  height: 10px;
+  width: 10px;
+  margin-top: 2rem;
+}
+
+.swiper-pagination {
+  position: unset;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+.duo-images {
+  display: flex;
+  margin-top: 5rem;
+  width: 100%;
+  gap: 1rem;
+}
+.duo-images img {
+  width: 100%;
+}
+
+.mbl-slider .swiper {
+  width: 95%;
+}
+.mbl-slider .swiper .swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.mbl-slider .swiper .swiper-slide p {
+  text-align: left;
+  font-size: 1.3rem;
+  margin: 1rem 0 0 0;
+  font-weight: 600;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#homeware-img {
+  margin: 5rem 0 0 1rem;
+}
+
+.excluisve-collection {
+  /* Other styling elements, that are not necessary for the example */
+}
+.excluisve-collection .main-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.excluisve-collection .img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.excluisve-collection .inner-img {
+  transition: 0.5s;
+  width: 100%;
+}
+.excluisve-collection .inner-img:hover {
+  transform: scale(1.1);
+}
+.excluisve-collection .img-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.kick-off-img {
+  text-align: center;
+  display: block;
+  margin-top: 5rem;
+}
+.kick-off-img .pc-img {
+  width: 100%;
+}
+.kick-off-img .pc-img img {
+  width: 97%;
+}
+.kick-off-img .mbl-img {
+  display: none;
+}
+
+.style-images {
+  margin-top: 5rem;
+  max-width: 100%;
+  width: 99%;
+}
+
+.sylish-dress {
+  margin-top: 3rem;
+}
+.sylish-dress .collection-row {
+  display: flex;
+  gap: 0.6rem;
+}
+.sylish-dress .collection-row img {
+  width: 33.3%;
+  margin-top: 0.7rem;
+}
+
+.school-essential img {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.women-footwear {
+  text-align: center;
+  display: block;
+  margin-top: 5rem;
+}
+.women-footwear .pc-img {
+  width: 100%;
+}
+.women-footwear .pc-img img {
+  width: 97%;
+}
+.women-footwear .mbl-img {
+  display: none;
+}
+
+.footwear-images {
+  margin-top: 4rem;
+  max-width: 100%;
+  width: 99.9%;
+}
+.footwear-images .footwear-img {
+  display: flex;
+  gap: 0.6rem;
+}
+.footwear-images .footwear-img img {
+  width: 33.3%;
+  margin-top: 0.7rem;
+}
+
+.women-plus-size-img {
+  text-align: center;
+  display: block;
+  margin-top: 5rem;
+}
+.women-plus-size-img .pc-img {
+  width: 100%;
+}
+.women-plus-size-img .pc-img img {
+  width: 97%;
+}
+.women-plus-size-img .mbl-img {
+  display: none;
+}
+
+.move-body-img {
+  text-align: center;
+  display: block;
+  margin-top: 5rem;
+}
+.move-body-img .pc-img {
+  width: 100%;
+}
+.move-body-img .pc-img img {
+  width: 97%;
+}
+.move-body-img .mbl-img {
+  display: none;
+}
+
+.timeless-img {
+  margin-top: 4rem;
+}
+.timeless-img .pc-img img {
+  width: 100%;
+}
+.timeless-img .mbl-img {
+  width: 100%;
+  display: none;
+}
+
+.women-nightwear-img {
+  text-align: center;
+  display: block;
+  margin-top: 5rem;
+}
+.women-nightwear-img .pc-img {
+  width: 100%;
+}
+.women-nightwear-img .pc-img img {
+  width: 97%;
+}
+.women-nightwear-img .mbl-img {
+  display: none;
+}
+
+.wishlist-slider .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 1.1rem;
+}
+.wishlist-slider .swiper .swiper-slide a img {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.wishlist-slider .swiper .swiper-slide p {
+  font-size: 1.3rem;
+  margin-top: 1.7rem;
+  margin-left: 0.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.wishlist-slider .swiper .swiper-slide h4 {
+  font-size: 1.8rem;
+  margin-left: 0.4rem;
+  margin-top: 0.5rem;
+  color: rgb(59, 59, 59);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.wishlist-slider .swiper .swiper-slide a {
+  display: flex;
+  margin-top: 0.3rem;
+  margin-left: 0.4rem;
+}
+.wishlist-slider .swiper .swiper-slide a i {
+  color: rgb(59, 59, 59);
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+}
+.wishlist-slider .swiper .swiper-slide a p {
+  color: rgb(59, 59, 59);
+  margin-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.wishlist-slider .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wishlist-slider .swiper .swiper-button-next,
+.wishlist-slider .swiper .swiper-button-prev {
+  color: rgb(0, 0, 0);
+  margin-top: -6rem;
+  padding: 0 2rem;
+}
+
+.reward-img img {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.info-content {
+  margin-top: 6rem;
+  margin-left: 7rem;
+  width: 85%;
+}
+.info-content .main-heading h2 {
+  font-size: 5rem;
+}
+.info-content p {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey;
+  line-height: 1.7rem;
+  margin-bottom: 1.5rem;
+  word-spacing: 0.2rem;
+}
+.info-content span {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 2rem;
+}
+.info-content #all-content {
+  display: none;
+}
+.info-content #all-content h4 {
+  font-size: 3rem;
+  display: block;
+  margin-top: 2.4rem;
+}
+.info-content #all-content p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey;
+  line-height: 1.7rem;
+  margin-bottom: 1.4rem;
+  word-spacing: 0.2rem;
+}
+.info-content #all-content li {
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey;
+  line-height: 1.7rem;
+  margin-bottom: 1.4rem;
+  word-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  #clothing .menu-lists {
+    padding: 2rem 20%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  #clothing .menu-lists {
+    padding: 2rem 17%;
+  }
+  .swiper .sld-btn-hide {
+    display: none;
+  }
+  .style-images {
+    width: 99%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #clothing .menu-lists {
+    padding: 2rem 15%;
+  }
+  .style-images {
+    width: 99.8%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sylish-dress {
+    margin-top: 1rem;
+    padding: 0 0.7rem;
+    margin-left: -0.5rem;
+  }
+  .footwear-images {
+    margin-top: 2rem;
+    width: 99.5%;
+    margin-left: -0.5rem;
+  }
+  .mbl-slider .swiper .swiper-slide p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main-img img {
+    width: 98%;
+    height: 32rem;
+  }
+  .excluisve-collection .main-row {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .info-content {
+    margin-left: 6rem;
+  }
+  .info-content .main-heading h2 {
+    font-size: 4rem;
+  }
+  #clothing {
+    left: 0px;
+    width: 100%;
+  }
+  #clothing .menu-lists {
+    padding: 2rem 5%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .main-img img {
+    width: 98%;
+    height: 27rem;
+  }
+  .timeless-img {
+    margin-top: 2rem;
+  }
+  .timeless-img .pc-img {
+    display: none;
+  }
+  .timeless-img .mbl-img {
+    display: block;
+    text-align: center;
+  }
+  .timeless-img .mbl-img img {
+    width: 100%;
+  }
+  .kick-off-img {
+    margin-top: 2rem;
+  }
+  .kick-off-img .pc-img {
+    display: none;
+  }
+  .kick-off-img .mbl-img {
+    display: block;
+    text-align: center;
+  }
+  .kick-off-img .mbl-img img {
+    width: 90%;
+  }
+  .women-footwear {
+    margin-top: 2rem;
+  }
+  .women-footwear .pc-img {
+    display: none;
+  }
+  .women-footwear .mbl-img {
+    display: block;
+    text-align: center;
+  }
+  .women-footwear .mbl-img img {
+    width: 90%;
+  }
+  .women-plus-size-img {
+    margin-top: 2rem;
+  }
+  .women-plus-size-img .pc-img {
+    display: none;
+  }
+  .women-plus-size-img .mbl-img {
+    display: block;
+    text-align: center;
+  }
+  .women-plus-size-img .mbl-img img {
+    width: 90%;
+  }
+  .move-body-img {
+    margin-top: 2rem;
+  }
+  .move-body-img .pc-img {
+    display: none;
+  }
+  .move-body-img .mbl-img {
+    display: block;
+    text-align: center;
+  }
+  .move-body-img .mbl-img img {
+    width: 90%;
+  }
+  .women-nightwear-img {
+    margin-top: 2rem;
+  }
+  .women-nightwear-img .pc-img {
+    display: none;
+  }
+  .women-nightwear-img .mbl-img {
+    display: block;
+    text-align: center;
+  }
+  .women-nightwear-img .mbl-img img {
+    width: 90%;
+  }
+  #for-mbl {
+    margin-top: -4rem;
+    display: block;
+    height: 6rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  #clothing .menu-lists {
+    padding: 2rem 1%;
+  }
+  .main-img img {
+    width: 98%;
+    height: 22rem;
+  }
+  .excluisve-collection .main-row {
+    gap: 0.7rem;
+    padding: 0 0.7rem;
+  }
+  #hide-mbl-f {
+    display: none;
+  }
+  #for-pc {
+    display: none;
+  }
+  .info-content {
+    margin-left: 5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .first-slider {
+    margin-top: 4rem;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
+  }
+  .wishlist-slider .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .wishlist-slider .swiper .swiper-slide p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .wishlist-slider .swiper .swiper-slide h4 {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+  }
+  .wishlist-slider .swiper .swiper-slide a {
+    margin-left: 1rem;
+  }
+  .wishlist-slider .swiper .swiper-slide a i {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+  }
+  .reward-img img {
+    margin-top: 4rem;
+  }
+  .school-essential img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main-img img {
+    height: 19rem;
+    width: 94%;
+  }
+  .heading {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .info-content {
+    margin-left: 4rem;
+    margin-top: 5rem;
+  }
+  .info-content .main-heading h2 {
+    font-size: 3.5rem;
+  }
+  .info-content #all-content h4 {
+    font-size: 2.6rem;
+    margin-top: 2rem;
+  }
+  .info-content #all-content p {
+    margin-top: 1.8rem;
+  }
+  .info-content #all-content li {
+    margin-top: 1.8rem;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .main-img {
+    margin-top: 1.2rem;
+  }
+  .heading {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .first-slider {
+    margin-top: 3.2rem;
+  }
+  .duo-images {
+    margin-top: 4.4rem;
+    gap: 0.5rem;
+  }
+  .mbl-slider {
+    margin-top: 3.2rem;
+  }
+  .excluisve-collection .main-row {
+    gap: 0.6rem;
+    padding: 0 0.4rem;
+  }
+  .kick-off-img .mbl-img img {
+    width: 94%;
+  }
+  .sylish-dress {
+    margin-top: -3.5rem;
+  }
+  .sylish-dress .collection-row {
+    gap: 0.4rem;
+  }
+  .sylish-dress .collection-row img {
+    margin-top: 0.5rem;
+  }
+  .women-footwear .mbl-img img {
+    width: 94%;
+  }
+  .footwear-images {
+    width: 98.5%;
+  }
+  .footwear-images .footwear-img {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+  }
+  .footwear-images .footwear-img img {
+    margin-top: 0rem;
+  }
+  .women-plus-size-img .mbl-img img {
+    width: 94%;
+  }
+  .move-body-img .mbl-img img {
+    width: 94%;
+  }
+  .women-nightwear-img .mbl-img img {
+    width: 94%;
+  }
+  .wishlist-slider .swiper .swiper-slide a img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .reward-img img {
+    margin-top: 2rem;
+  }
+  .info-content {
+    margin-left: 3rem;
+    margin-top: 5rem;
+  }
+  .info-content .main-heading h2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .main-img {
+    margin-top: 1.2rem;
+  }
+  .info-content {
+    margin-left: 2.5rem;
+  }
+  .info-content #all-content h4 {
+    font-size: 2.3rem;
+  }
+}/*# sourceMappingURL=home-page.css.map */

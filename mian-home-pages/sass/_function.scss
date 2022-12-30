@@ -1,0 +1,111 @@
+@mixin images($par1) {
+    width: 100%;
+    margin-top: $par1;
+    text-align: center;
+    cursor: pointer;
+}
+
+@mixin subMenu {
+    background-color: $white-clr;
+    position: absolute;
+    max-width: 100%;
+    width: 98%;
+    top: 56px;
+    left: 10px;
+    cursor: auto;
+    pointer-events: none;
+    opacity: 0;
+    border: 1px solid $light-clr; 
+    transition: all .3s ease-in-out;
+    z-index: 999;
+     
+        .menu-lists{
+              display: flex;  
+              min-height: 30rem;
+              justify-content: center;  
+              gap: 10rem;
+              padding: 2rem 0;     
+ 
+             ul{
+                text-align: left;
+                width: 15%;
+                // background-color: aqua;
+                // overflow: hidden;
+                word-wrap: break-word;
+ 
+                 li{
+                   list-style: none;
+                   
+                   .menu-heading{
+                       font-size: 1.2rem;
+                       font-weight: 600;
+                       text-transform: uppercase;
+                       margin-bottom: .6rem;
+                   }
+                   a{
+                       margin: 0;
+                       padding: .5rem;
+                       padding: .5rem;
+                       text-decoration: none;
+                       position: relative;
+
+                       &::after {
+                        content: "";
+                        height: 1px;
+                        width: 0;
+                        background-color: rgb(255, 0, 0);
+                        position: absolute;
+                        bottom: 3px;
+                        left: 5px;
+                        transition: .3s ease-in-out;
+                    }
+
+                    &:hover::after {
+                        width: 95%;
+                    }
+                   }
+                 }
+                
+            }
+        }
+    }
+
+@mixin SubMenuHover{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@mixin single-full-images {
+    text-align: center;
+    display: block;
+    margin-top: 5rem;
+
+    .pc-img {
+        width: 100%;
+
+        img {
+            width: 97%;
+        }
+    }
+
+    .mbl-img {
+        display: none;
+    }
+}
+
+@mixin single-full-images-mbl {
+    margin-top: 2rem;
+
+    .pc-img {
+        display: none;
+    }
+
+    .mbl-img {
+        display: block;
+        text-align: center;
+        
+        img{
+            width: 90%;
+        }
+    }
+}

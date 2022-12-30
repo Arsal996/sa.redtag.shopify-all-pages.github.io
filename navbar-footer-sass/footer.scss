@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&family=Tajawal:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
+
+
+
+* {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+$red: #ff0000;
+$white-clr: #fff;
+$black-clr: rgb(0, 0, 0);
+$light-clr: rgb(179, 179, 179);
+
+html {
+    font-size: 75%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white-clr;
+
+}
+
+// footer css 
+
+footer {
+
+    background-color: $black-clr;
+
+    .top-footer {
+        background-color: pink;
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3rem 10%;
+
+        .text-part {
+            width: 50%;
+
+            h2 {
+                display: none;
+            }
+
+            h3 {
+                margin: .5rem 0;
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+        }
+
+        .form-part {
+            width: 50%;
+
+            .email-form {
+                display: flex;
+                margin-top: .7rem;
+
+                input {
+                    width: 80%;
+                    height: 45px;
+                    border-radius: 50px;
+                    background: $white-clr;
+                    font-size: 1.3rem;
+                    color: $black-clr;
+                    padding: 0 20px;
+                    text-transform: none;
+                }
+
+                .sub-btn {
+                    width: 180px;
+                    height: 45px;
+                    text-transform: uppercase;
+                    // position: absolute;
+                    margin-left: -100px;
+                    border-radius: 50px;
+                    background: $black-clr;
+                    font-size: 1.2rem;
+                    color: $white-clr;
+                    padding: 0 20px;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: aliceblue;
+                        color: $black-clr;
+                        border: 2px solid $black-clr;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #for-mbl-icons {
+        display: none;
+
+        a {
+            color: $black-clr;
+            font-size: 1.7rem;
+
+            i {
+                padding: 0 .7rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+
+.main-footer {
+    background-color: $black-clr;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5%;
+    border-bottom: 1px solid grey;
+
+    .footer-data ul {
+        list-style: none;
+
+        .footer-heading {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $white-clr;
+            margin-bottom: 1.4rem;
+            border-bottom: 1px solid rgb(109, 109, 109);
+        }
+
+        li {
+            padding: 1rem 0;
+
+            a {
+                color: $light-clr;
+                padding: 1rem 0;
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .five {
+       
+        a {
+            color: $white-clr;
+            margin: 1.5rem 0;
+            float: right;
+        }
+
+        select {
+            width: 110%;
+            height: 50px;
+            background: none;
+            border-radius: 40px;
+            border: 2px solid $white-clr;
+            color: $white-clr;
+            padding: 1rem 1rem ;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            option {
+                height: 50px;
+                background: $black-clr;
+                color: $white-clr;
+                padding: 1rem 2rem 0 0;
+                font-size: 1.2rem;
+            }
+        }
+
+        .call-btn {
+            width: 170px;
+            height: 45px;
+            border: 2px solid $white-clr;
+            text-transform: uppercase;
+            border-radius: 50px;
+            background: $black-clr;
+            font-size: 1rem;
+            color: $white-clr;
+            padding: 0 10px;
+            margin: 200px 0 0 50px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: aliceblue;
+                color: $black-clr;
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+// lower-footer css 
+
+.lower-footer {
+    color: $white-clr;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+
+    .logo-sec {
+        h2 {
+            text-transform: uppercase;
+            font-size: 3rem;
+
+            span {
+                color: $red;
+            }
+        }
+
+        p {
+            color: $light-clr;
+            margin-top: .9rem;
+            font-size: .9rem;
+        }
+    }
+
+    .rights-sec {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: $light-clr;
+    }
+
+    .icons-sec {
+        a {
+            color: $white-clr;
+            font-size: 1.7rem;
+
+            i {
+                padding: 0 1rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+
+// media querry
+
+@media only screen and (max-width: 1050px) {
+    footer .top-footer {
+        padding: 3rem 4%;
+    }
+
+    footer .main-footer {
+        flex-wrap: wrap;
+    }
+
+    footer .lower-footer {
+        flex-wrap: wrap;
+    }
+
+    #men-nav-b {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    footer .top-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    footer .top-footer .text-part {
+        width: 100%;
+    }
+
+    footer .top-footer .form-part {
+        width: 90%;
+        margin-left: 4rem;
+    }
+
+    footer .main-footer .five .call-btn {
+        margin-top: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .lower-footer .icons-sec {
+        margin-top: 2rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    footer .top-footer .text-part h3 {
+        display: none;
+    }
+
+    #hide-mbl-f {
+        display: none;
+    }
+
+    footer .top-footer .text-part h2 {
+        display: block;
+        font-size: 2.5rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+
+    footer .top-footer .form-part .email-form {
+        flex-direction: column;
+    }
+
+    footer .top-footer .form-part .email-form input {
+        width: 100%;
+        margin-left: -2rem;
+    }
+
+    footer .top-footer .form-part .email-form .sub-btn {
+        margin-left: -.5rem;
+        margin-top: 1.4rem;
+        width: 85%;
+    }
+
+    .lower-footer .icons-sec {
+        display: none;
+    }
+    #for-pc {
+        display: none;
+    }
+
+    .top-footer #for-mbl-icons {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    footer .main-footer {
+        padding: 1rem 3rem;
+    }
+
+    footer .main-footer .five .call-btn {
+        margin-bottom: 1.5rem;
+    }
+
+}
+@media only screen and (max-width: 415px) {
+    .top-footer #for-mbl-icons a i {
+        padding: 0 1rem;
+    }
+
+    .lower-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 11rem;
+
+        // #CR-No {
+        //     display: none;
+        // }
+
+        // #VAT {
+        //     display: none;
+        // }
+    }
+
+    .main-footer .five select {
+        margin-left: 2rem;
+    }
+    footer .main-footer .five .call-btn{
+        margin-left: 6rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .main-footer .five select {
+        margin-left: 1rem;
+    }
+    footer .main-footer .five .call-btn{
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    footer .main-footer {
+        padding: 1 2.2rem;
+    }
+
+    footer .main-footer .five .call-btn {
+        margin-left: 4rem;
+    }
+    .main-footer .five select {
+        margin-left: .6rem;
+    }
+}

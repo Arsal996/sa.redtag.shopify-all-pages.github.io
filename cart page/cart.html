@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link for fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- slider js link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- css link file  -->  
+    <link rel="stylesheet" href="../navbar-footer-sass/navbar.css">
+    <link rel="stylesheet" href="sass/best-seller.css">
+    <title>Girls Fashion</title>
+</head>
+   
+<style>
+       .main-cart{
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+       }
+       .main-cart p{
+            font-size: 2rem;
+            margin-top: 3rem;
+            color: rgb(73, 73, 73);
+            text-transform: lowercase;
+       }
+       .main-cart .cart-btn{
+            background-color: black;
+            color: white;
+            padding: 1rem 2.4rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            margin-top: 2.7rem;
+            cursor: pointer;
+            transition: .4s;
+       }
+       .cart-btn:hover{
+           background-color: rgb(251, 252, 253);
+           color: black;
+           font-weight: 600;
+           padding: .8rem 2.2rem;
+           border: 2px solid black;
+       }
+       @media only screen and (max-width: 450px){
+        .main-cart .cart-btn{
+             margin-top: 2rem;
+             font-size: 1.2rem;
+        }
+       }
+</style>
+
+<body>
+
+    <!-- header navbar section  -->
+
+    <header>
+        <div class="navbar">
+            <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <div class="nav-main">
+                <a href="" class="logo">Redtag<span>.</span> </a>
+                <div class="nav-menu" id="menu-mt">
+                    <li>
+                        <a class="nav-main-link-active" href="../index.html">Women
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul id="women">
+                            <li><a class="nav-sub-link" href="">New In W</a></li>
+                            <li><a class="nav-sub-link" href="">Best Seller</a></li>
+                            <li><a class="nav-sub-link" href="">Clothing</a></li>
+                            <li><a class="nav-sub-link" href="">Winter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../mian-home-pages/menfashion.html">
+                            Men
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul id="men">
+                            <li><a class="nav-sub-link" href="">New In M</a></li>
+                            <li><a class="nav-sub-link" href="">Best Seller</a></li>
+                            <li><a class="nav-sub-link" href="">Clothing</a></li>
+                            <li><a class="nav-sub-link" href="">Winter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../mian-home-pages/girlsfashion.html">
+                            Girls
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul id="girls">
+                            <li><a class="nav-sub-link" href="">New In G</a></li>
+                            <li><a class="nav-sub-link" href="">Best Seller</a></li>
+                            <li><a class="nav-sub-link" href="">Clothing</a></li>
+                            <li><a class="nav-sub-link" href="">Winter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../mian-home-pages/boysfashion.html">
+                            Boys
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul id="boys">
+                            <li><a class="nav-sub-link" href="">New In B</a></li>
+                            <li><a class="nav-sub-link" href="">Best Seller</a></li>
+                            <li><a class="nav-sub-link" href="">Clothing</a></li>
+                            <li><a class="nav-sub-link" href="">Winter</a></li>
+                        </ul>
+                    <li>
+                        <a id="home-btn-adj" href="../mian-home-pages/homewarefashion.html">
+                            Homeware
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul id="homeware">
+                            <li><a class="nav-sub-link" href="">New In H</a></li>
+                            <li><a class="nav-sub-link" href="">Best Seller</a></li>
+                            <li><a class="nav-sub-link" href="">Clothing</a></li>
+                            <li><a class="nav-sub-link" href="">Winter</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <form action="">
+                    <input type="search" id="search-bar" placeholder="Search">
+                    <label for="search-bar" class="fas fa-search"></label>
+                </form>
+                <div class="nav-icons">
+                    <a href="/">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#account"
+                            alt="">
+                    </a>
+                    <a href="/">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                            alt="">
+                    </a>
+                    <a href="../cart page/cart.html">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="search-for-tm">
+            <form action="">
+                <input type="search" id="search-bar" placeholder="Search">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </div>
+    </header>
+
+    <!-- cart button section  -->
+
+    <div class="main-cart">
+          <p><span>Y</span>our Cart is Currently Empty</p>
+          <a href="../best-seller-pages/girls-best-seller.html">
+            <button class="cart-btn">Continue Shopping</button>
+          </a>
+    </div>
+
+    <script src="js/best-seller.js"></script>
+</body>
+</html>
