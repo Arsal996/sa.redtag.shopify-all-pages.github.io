@@ -685,6 +685,9 @@ body {
 }
 
 @media only screen and (max-width: 990px) {
+  .hide-for-tab-mbl{
+         display: none;
+    }
   .main-product {
     flex-direction: column;
   }
